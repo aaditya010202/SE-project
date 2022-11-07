@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+body {
+  background-color: black;
+}
+.containerVid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.videoArea {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  gap: 15rem;
+  margin-top: 10%;
+}
+.videoArea div {
+  flex-direction: column;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.detectBtn {
+  width: 10rem;
+  height: 3rem;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.detectBtn {
+  background: #fb2576;
+  border: none;
+  z-index: 1;
+}
+.detectBtn:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #9d4edd;
+  border-radius: 5px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.detectBtn:hover {
+  color: #fff;
+}
+.detectBtn:hover:after {
+  left: 0;
+  width: 100%;
+}
+.detectBtn:active {
+  top: 2px;
+}
+
+.about {
+  color: white;
+  bottom: -12%;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  margin: 2rem;
+}
+
+.about h3 {
+  font-size: 24px;
+}
+
+.recomBtnDiv {
+  margin-top: 5rem;
+}
+
+.recomBtn {
+  width: 15rem;
+  height: 5rem;
+  color: #fff;
+  border-radius: 5px;
+  align-items: center;
+  font-size: 16px;
+  padding: 10px 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  background: #ffb703;
+  border: none;
+  z-index: 1;
+  margin: 0 auto;
+  position: relative;
+}
+
+.recomBtn:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #9d4edd;
+  border-radius: 5px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.recomBtn:hover {
+  color: #fff;
+}
+.recomBtn:hover:after {
+  left: 0;
+  width: 100%;
+}
+.recomBtn:active {
+  top: 2px;
+}
+video,
+canvas {
+  border-radius: 1rem;
+}
+.navbar {
+  background: rgba(255, 255, 255, 0.781);
+  position: fixed;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  left: 0%;
+  top: 0%;
+  margin: 0 auto;
+  gap: 75%;
+}
+.navbar h2 {
+  font-family: "Satisfy", cursive;
+  color: #9d4edd;
+  margin-left: 1rem;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 0.5rem;
+}

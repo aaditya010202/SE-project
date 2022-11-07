@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./mood.css" />
+
+    <title>detect mood</title>
+  </head>
+  <body>
+    <div class="containerVid">
+      <div class="navbar">
+        <h2>uplift</h2>
+      </div>
+
+      <div class="videoArea">
+        <div>
+          <video id="video" width="320" height="240" autoplay></video>
+          <button class="detectBtn" id="start-camera">Start Camera</button>
+        </div>
+        <div>
+          <canvas id="canvas" width="320" height="240"></canvas>
+          <button class="detectBtn" id="click-photo">Click Photo</button>
+        </div>
+      </div>
+
+      <div class="recomBtnDiv">
+        <button class="recomBtn">get recommendations</button>
+      </div>
+    </div>
+  </body>
+  <script src="./mood.js"></script>
+</html>
